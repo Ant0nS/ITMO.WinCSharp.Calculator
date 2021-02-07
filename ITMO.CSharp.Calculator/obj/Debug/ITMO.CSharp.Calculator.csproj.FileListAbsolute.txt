@@ -1,0 +1,17 @@
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\bin\Debug\ITMO.CSharp.Calculator.exe.config
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\bin\Debug\ITMO.CSharp.Calculator.exe
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\bin\Debug\ITMO.CSharp.Calculator.pdb
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.csprojAssemblyReference.cache
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\MainWindow.g.cs
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\App.g.cs
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator_MarkupCompile.cache
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator_MarkupCompile.lref
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\MainWindow.baml
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.g.resources
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.Properties.Resources.resources
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.csproj.GenerateResource.cache
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.csproj.CoreCompileInputs.cache
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.exe
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\ITMO.CSharp.Calculator.pdb
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\QuadricEquation.g.cs
+C:\Users\anton\source\repos\Ant0nS\ITMO.CSharp.Calculator\obj\Debug\QuadricEquation.baml
