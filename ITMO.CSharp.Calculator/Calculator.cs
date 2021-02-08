@@ -137,24 +137,30 @@ namespace Calculator
 			int numHold;
 			if (stringAnswer != "") 
 			{
-				numHold = Convert.ToInt32(stringAnswer);
-				if (numHold >= 0)
+				try
 				{
-					if (numHold > 2)
+					numHold = Convert.ToInt32(stringAnswer);
+					if (numHold >= 0)
 					{
-						int f = 1;
-						for (int k = 2; k <= numHold; k++)
+						if (numHold > 2)
 						{
-							f = f * k;
+							int f = 1;
+							for (int k = 2; k <= numHold; k++)
+							{
+								f = f * k;
+							}
+							stringAnswer = Convert.ToString(f);
 						}
-						stringAnswer = Convert.ToString(f);
+						else
+                   				{
+							stringAnswer = "1";
+                   				}
 					}
-					else
-                    {
-						stringAnswer = "1";
-                    }
-				}
-				else 
+					else 
+					{
+						stringAnswer = "Can not compute";
+					}
+				catch
 				{
 					stringAnswer = "Can not compute";
 				}
