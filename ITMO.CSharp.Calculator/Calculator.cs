@@ -160,6 +160,7 @@ namespace Calculator
 					{
 						stringAnswer = "Can not compute";
 					}
+				}
 				catch
 				{
 					stringAnswer = "Can not compute";
