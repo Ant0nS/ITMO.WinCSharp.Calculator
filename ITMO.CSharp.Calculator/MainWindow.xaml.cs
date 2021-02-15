@@ -202,6 +202,7 @@ namespace ITMO.CSharp.Calculator
             SqrRoot.Visibility = Visibility.Visible;
             CubeRoot.Visibility = Visibility.Visible;
             QuadricEquation.Visibility = Visibility.Visible;
+            Display.Width = 480;
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
@@ -215,6 +216,7 @@ namespace ITMO.CSharp.Calculator
             SqrRoot.Visibility = Visibility.Hidden;
             CubeRoot.Visibility = Visibility.Hidden;
             QuadricEquation.Visibility = Visibility.Hidden;
+            Display.Width = 320;
         }
     }
 }
