@@ -38,9 +38,6 @@ namespace ITMO.CSharp.Calculator
         public MainWindow()
         {
             InitializeComponent();
-            WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            Topmost = true;
-
         }
 
         private void Num1_Click(object sender, RoutedEventArgs e)
