@@ -207,15 +207,15 @@ namespace ITMO.CSharp.Calculator
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
         {
-            Delete.Visibility = Visibility.Hidden;
-            Factorial.Visibility = Visibility.Hidden;
-            Square.Visibility = Visibility.Hidden;
-            Cube.Visibility = Visibility.Hidden;
-            InverseValue.Visibility = Visibility.Hidden;
-            Degree.Visibility = Visibility.Hidden;
-            SqrRoot.Visibility = Visibility.Hidden;
-            CubeRoot.Visibility = Visibility.Hidden;
-            QuadricEquation.Visibility = Visibility.Hidden;
+            Delete.Visibility = Visibility.Collapsed;
+            Factorial.Visibility = Visibility.Collapsed;
+            Square.Visibility = Visibility.Collapsed;
+            Cube.Visibility = Visibility.Collapsed;
+            InverseValue.Visibility = Visibility.Collapsed;
+            Degree.Visibility = Visibility.Collapsed;
+            SqrRoot.Visibility = Visibility.Collapsed;
+            CubeRoot.Visibility = Visibility.Collapsed;
+            QuadricEquation.Visibility = Visibility.Collapsed;
             Display.Width = 320;
         }
     }
