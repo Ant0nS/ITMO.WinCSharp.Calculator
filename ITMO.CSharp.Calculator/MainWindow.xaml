@@ -8,8 +8,9 @@
         Title="Calculator" 
         Height="650" 
         Width="700" 
-        ResizeMode="NoResize" 
-        WindowState="Minimized" 
+        ResizeMode="NoResize"  
+        Topmost="True" 
+        WindowStartupLocation="CenterScreen"
         Cursor="Hand">
     <Window.Resources>
         <SolidColorBrush x:Key="MyBrush" Color="White"/>
