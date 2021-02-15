@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="QuadricEquation" 
         Height="130" Width="300" 
-        WindowState="Minimized" 
-        Topmost="True">
+        Topmost="True" 
+        WindowStartupLocation="CenterScreen"
+        Cursor="Hand">
     <Grid>
         <Label Content="Imput coefficients" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Top"/>
         <Label HorizontalAlignment="Left" Margin="85,30,0,0" VerticalAlignment="Top">x&#178;+</Label>
