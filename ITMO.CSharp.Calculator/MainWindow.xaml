@@ -1,4 +1,4 @@
-﻿<Window x:Class="ITMO.CSharp.Calculator.MainWindow"
+<Window x:Class="ITMO.CSharp.Calculator.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,12 +6,10 @@
         xmlns:local="clr-namespace:ITMO.CSharp.Calculator"
         mc:Ignorable="d"
         Title="Calculator" 
-        Height="650" 
-        Width="700" 
-        ResizeMode="NoResize"  
-        Topmost="True" 
-        WindowStartupLocation="CenterScreen"
-        Cursor="Hand">
+        Height="Auto" 
+        Width="Auto" 
+        ResizeMode="NoResize" 
+        Cursor="Hand" Topmost="True" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <SolidColorBrush x:Key="MyBrush" Color="White"/>
         <Style TargetType="TextBox">
@@ -27,64 +25,63 @@
         </Style>
     </Window.Resources>
 
-    <Grid x:Name="Menu1">
+    <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="40"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="80"/>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="40" />
         </Grid.RowDefinitions>
-        <TextBox x:Name="Display" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="6" HorizontalContentAlignment="Right" IsEnabled="False" Text="0" BorderThickness="4"/>
-        <Button x:Name="num1" Grid.Row="5" Grid.Column="1" Click="Num1_Click">1</Button>
-        <Button x:Name="num2" Grid.Row="5" Grid.Column="2" Click="Num2_Click">2</Button>
-        <Button x:Name="num3" Grid.Row="5" Grid.Column="3" Click="Num3_Click">3</Button>
-        <Button x:Name="num4" Grid.Row="4" Grid.Column="1" Click="Num4_Click">4</Button>
-        <Button x:Name="num5" Grid.Row="4" Grid.Column="2" Click="Num5_Click">5</Button>
-        <Button x:Name="num6" Grid.Row="4" Grid.Column="3" Click="Num6_Click">6</Button>
-        <Button x:Name="num7" Grid.Row="3" Grid.Column="1" Click="Num7_Click">7</Button>
-        <Button x:Name="num8" Grid.Row="3" Grid.Column="2" Click="Num8_Click">8</Button>
-        <Button x:Name="num9" Grid.Row="3" Grid.Column="3" Click="Num9_Click">9</Button>
-        <Button x:Name="num0" Grid.Row="6" Grid.Column="2" Click="Num0_Click">0</Button>
-        <Button x:Name="Point" Grid.Row="6" Grid.Column="3" Click="Point_Click">.</Button>
-        <Button x:Name="PlusMinus" Grid.Row="6" Grid.Column="1" Click="PlusMinus_Click">+/-</Button>
-        <Button x:Name="Divide" Grid.Row="2" Grid.Column="4" Click="Divide_Click">&#247;</Button>
-        <Button x:Name="Multiply" Grid.Row="3" Grid.Column="4" Click="Multiply_Click">&#215;</Button>
-        <Button x:Name="Substract" Grid.Row="4" Grid.Column="4" Click="Substract_Click">-</Button>
-        <Button x:Name="Sum" Grid.Row="5" Grid.Column="4" Click="Sum_Click">+</Button>
-        <Button x:Name="Equal" Grid.Row="6" Grid.Column="4" Click="Equal_Click">=</Button>
-        <Button x:Name="Clear" Grid.Column="3" Grid.Row="2" Click="Clear_Click">C</Button>
-        <Button x:Name="Delete" Grid.Column="5" Grid.Row="2" Click="Delete_Click" Visibility="Hidden">&lt;--</Button>
+        <TextBox Name="Display" Width="320" HorizontalContentAlignment="Right" IsEnabled="False" Text="0" BorderThickness="4" Grid.ColumnSpan="7" Grid.Column="1" Margin="0,0,40,0" Grid.Row="1" Grid.IsSharedSizeScope="True"/>
 
-        <Button x:Name="Degree" ToolTip="Raising to degree" Grid.Column="6" Grid.Row="4" Click="Degree_Click" Visibility="Hidden">&#121;&#739;</Button>
-        <Button x:Name="Square" ToolTip="Squaring" Grid.Column="5" Grid.Row="3" Click="Square_Click" Visibility="Hidden">x&#178;</Button>
-        <Button x:Name="InverseValue" ToolTip="Inversal Value" Grid.Column="5" Grid.Row="4" Click="InverseValue_Click" Visibility="Hidden">1/x</Button>
-        <Button x:Name="SqrRoot" ToolTip="Square Root" Grid.Column="5" Grid.Row="5" Click="SqrRoot_Click" Visibility="Hidden">&#8730;x</Button>
-        <Button x:Name="Factorial" ToolTip="Factorial" Grid.Column="6" Grid.Row="2" Click="Factorial_Click" Visibility="Hidden">n!</Button>
+        <Button Name="num1" Grid.Row="5" Grid.Column="1" Click="Num1_Click">1</Button>
+        <Button Name="num2" Grid.Row="5" Grid.Column="2" Click="Num2_Click">2</Button>
+        <Button Name="num3" Grid.Row="5" Grid.Column="3" Click="Num3_Click">3</Button>
+        <Button Name="num4" Grid.Row="4" Grid.Column="1" Click="Num4_Click">4</Button>
+        <Button Name="num5" Grid.Row="4" Grid.Column="2" Click="Num5_Click">5</Button>
+        <Button Name="num6" Grid.Row="4" Grid.Column="3" Click="Num6_Click">6</Button>
+        <Button Name="num7" Grid.Row="3" Grid.Column="1" Click="Num7_Click">7</Button>
+        <Button Name="num8" Grid.Row="3" Grid.Column="2" Click="Num8_Click">8</Button>
+        <Button Name="num9" Grid.Row="3" Grid.Column="3" Click="Num9_Click">9</Button>
+        <Button Name="num0" Grid.Row="6" Grid.Column="2" Click="Num0_Click">0</Button>
+        <Button Name="Point" Grid.Row="6" Grid.Column="3" Click="Point_Click">.</Button>
+        <Button Name="PlusMinus" Grid.Row="6" Grid.Column="1" Click="PlusMinus_Click">+/-</Button>
+        <Button Name="Divide" Grid.Row="2" Grid.Column="4" Click="Divide_Click">&#247;</Button>
+        <Button Name="Multiply" Grid.Row="3" Grid.Column="4" Click="Multiply_Click">&#215;</Button>
+        <Button Name="Substract" Grid.Row="4" Grid.Column="4" Click="Substract_Click">-</Button>
+        <Button Name="Sum" Grid.Row="5" Grid.Column="4" Click="Sum_Click">+</Button>
+        <Button Name="Equal" Grid.Row="6" Grid.Column="4" Click="Equal_Click">=</Button>
+        <Button Name="Clear" Grid.Column="1" Grid.Row="2" Click="Clear_Click">C</Button>
+        <Button Name="Delete" Grid.Column="5" Grid.Row="2" Click="Delete_Click" Visibility="Collapsed">&lt;--</Button>
 
-        <Button x:Name="Cube" ToolTip="Cubing"  Grid.Column="6" Grid.Row="3" Click="Cube_Click" Visibility="Hidden">x&#179;</Button>
-        <Button x:Name="QuadricEquation" ToolTip="Solving of Quadric Equation" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2" Click="QuadricEquation_Click" Visibility="Hidden">ax&#178;+bx+c=0</Button>
-        <Button x:Name="CubeRoot" ToolTip="Cube root" Grid.Column="6" Grid.Row="5" Click="CubeRoot_Click" Visibility="Hidden">&#8731;x</Button>
-        <Menu Margin="0,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
-            <MenuItem Header="&#9776; Menu" HorizontalAlignment="Left">
-                <MenuItem Header="Standard" HorizontalAlignment="Right" Width="150" Click="MenuItem_Click_2"/>
-                <MenuItem Header="Scientific" HorizontalAlignment="Right" Width="150" Click="MenuItem_Click_1"/>
-                <MenuItem Header="Exit" HorizontalAlignment="Right" Width="150" Click="MenuItem_Click"/>
+        <Button Name="Degree" ToolTip="Raising to degree" Grid.Column="6" Grid.Row="4" Click="Degree_Click" Visibility="Collapsed" Width="70.4">&#121;&#739;</Button>
+        <Button Name="Square" ToolTip="Squaring" Grid.Column="5" Grid.Row="3" Click="Square_Click" Visibility="Collapsed" Width="70.4">x&#178;</Button>
+        <Button Name="InverseValue" ToolTip="Inversal Value" Grid.Column="5" Grid.Row="4" Click="InverseValue_Click" Visibility="Collapsed" Width="70.4">1/x</Button>
+        <Button Name="SqrRoot" ToolTip="Square Root" Grid.Column="5" Grid.Row="5" Click="SqrRoot_Click" Visibility="Collapsed" Width="70.4">&#8730;x</Button>
+        <Button Name="Factorial" ToolTip="Factorial" Grid.Column="6" Grid.Row="2" Click="Factorial_Click" Visibility="Collapsed" Width="70.4">n!</Button>
+        <Button Name="Cube" ToolTip="Cubing"  Grid.Column="6" Grid.Row="3" Click="Cube_Click" Visibility="Collapsed" Width="70.4">x&#179;</Button>
+        <Button Name="QuadricEquation" ToolTip="Solving of Quadric Equation" Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="2" Click="QuadricEquation_Click" Visibility="Collapsed">ax&#178;+bx+c=0</Button>
+        <Button Name="CubeRoot" ToolTip="Cube root" Grid.Column="6" Grid.Row="5" Click="CubeRoot_Click" Visibility="Collapsed" Width="70.4">&#8731;x</Button>
+        <Menu Width="110"  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Top">
+            <MenuItem Header="&#9776; Menu" Width="60">
+                <MenuItem Header="Standard" Width="150" Click="MenuItem_Click_2"/>
+                <MenuItem Header="Scientific" Width="150" Click="MenuItem_Click_1"/>
+                <MenuItem Header="Exit" Width="150" Click="MenuItem_Click"/>
             </MenuItem>
         </Menu>
-        <Label Grid.ColumnSpan="5" Grid.Column="1" HorizontalContentAlignment="Right" FontSize="8"/>
     </Grid>
 </Window>
