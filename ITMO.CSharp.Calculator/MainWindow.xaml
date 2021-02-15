@@ -46,7 +46,7 @@
             <RowDefinition Height="80" />
             <RowDefinition Height="40" />
         </Grid.RowDefinitions>
-        <TextBox Name="Display" Width="320" HorizontalContentAlignment="Right" IsEnabled="False" Text="0" BorderThickness="4" Grid.ColumnSpan="7" Grid.Column="1" Margin="0,0,40,0" Grid.Row="1" Grid.IsSharedSizeScope="True"/>
+        <TextBox Name="Display" Width="320" HorizontalContentAlignment="Right" IsEnabled="False" Text="0" BorderThickness="4" Grid.ColumnSpan="7" Grid.Column="1" Margin="0,0,40,0" Grid.Row="1"/>
 
         <Button Name="num1" Grid.Row="5" Grid.Column="1" Click="Num1_Click">1</Button>
         <Button Name="num2" Grid.Row="5" Grid.Column="2" Click="Num2_Click">2</Button>
